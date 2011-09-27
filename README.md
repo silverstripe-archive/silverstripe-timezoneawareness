@@ -24,6 +24,8 @@ because it uses `Object::create('DatetimeField')` instead of `new DatetimeField(
 In other modules and custom code, you'll have to use the field directly,
 or replace any existing fields manually via `FieldSet->replaceField()`.
 
+*Note: Currently just works with NZ date format (`d/m/Y`).*
+
 ## Requirements ##
 
  * SilverStripe 2.5
