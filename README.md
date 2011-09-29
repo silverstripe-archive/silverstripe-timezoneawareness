@@ -34,3 +34,5 @@ or replace any existing fields manually via `FieldSet->replaceField()`.
 
  * Tom Rix (@rixth)
  * Ingo Schommer (@chillu)
+
+Thanks to Air New Zealand for sponsoring and contributing to this module!
