@@ -104,7 +104,7 @@ class TZDateTimeField extends DatetimeField {
 		// For now, we override field, system or user defaults for anything other than en_NZ
 		// and its date/time formats
 		$this->dateField->setConfig('dateformat', 'dd/MM/YYYY');
-		$this->dateField->setConfig('timeformat', 'hh:mma');
+		$this->dateField->setConfig('timeformat', 'HH:mm');
 	}
 	
 	function Type() {
@@ -175,7 +175,7 @@ class TZDateTimeField_Controller extends Controller {
 			'rfc' => TZDateTimeField::convert($fromTz, $toTz, $datetime, 'r'),
 			'ymd12hr' => TZDateTimeField::convert($fromTz, $toTz, $datetime, 'Y-m-d h:i:s a'),
 			'ymd24hr' => TZDateTimeField::convert($fromTz, $toTz, $datetime, 'Y-m-d H:i:s'),
-			'popupdatetime' => TZDateTimeField::convert($fromTz, $toTz, $datetime, 'd/m/Y h:ia'),
+			'popupdatetime' => TZDateTimeField::convert($fromTz, $toTz, $datetime, 'd/m/Y H:i'),
 		);
 		
 		echo Convert::raw2json($return);
