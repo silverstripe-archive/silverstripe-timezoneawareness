@@ -1,0 +1,24 @@
+{
+	"name": "silverstripe-labs/timezoneawareness",
+	"description": "The module extends the built-in `DatetimeField` form field with `TZDateTimeField`,
+		which allows selection of date and time, with a timezone dropdown.
+		This enables an automatic conversion between a user selected timezone
+		and the server timezone when saving the field, but it also allows
+		converting the date on the fly by changing to a different timezone.
+		Internally, the date and time are always saved in the server timezone,
+		so this is a purely presentational setting.",
+	"type": "silverstripe-module",
+	"keywords": ["silverstripe-labs", "timezoneawareness", "datetime"],
+	"authors": [
+	{
+		"name": "Tom Rix"
+	}
+	{
+		"name": "Ingo Schommer"
+	}
+	],
+	"require":
+	{
+		"silverstripe/framework": "2.5"
+	}
+}
